@@ -235,8 +235,8 @@ int main(int argc, char *argv[]) {
                  setsid();
                  int dn = open("/dev/null", O_WRONLY);
                  dup2(dn, 1); dup2(dn, 2);
-                 char *args[] = {"wezterm", "start", "--", "w3m", "https://duckduckgo.com", NULL};
-                 execvp("wezterm", args);
+               char *args[] = {"kitty", "w3m", "https://duckduckgo.com", NULL};
+                 execvp("kitty", args);
                  _exit(1);
              }
         }
