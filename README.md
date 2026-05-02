@@ -15,7 +15,12 @@ O **ArchonPlayer** é um tocador de música para terminal focado em estética cy
 | :---: | :---: | :---: |
 | ![Red](archonred.png) | ![Blue](archonblue.png) | ![Green](archongreen.png) |
 
-## 🚀 Como Compilar e Rodar
+## 🚀 Como Compilar e Rodar #
+# 📦 Requisitos Extras
+Para abrir o navegador (atalho `Z`), certifique-se de ter instalado:
+* **kitty** (Terminal)
+* **w3m** (Navegador de texto)
+
 
 Requer: `SDL2`, `SDL2_mixer` e `ncurses`.
 
