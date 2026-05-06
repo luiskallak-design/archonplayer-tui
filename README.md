@@ -28,31 +28,41 @@ O **ArchonPlayer** é um sistema de entretenimento para terminal focado em esté
 | `C` | **Theme** | Recalibra as cores do sistema (3 esquemas) |
 | `Q` | **Exit** | Encerra a operação e limpa o buffer |
 
-## 📦 Requisitos do Sistema
+## 🚀 Ritual de Instalação (Universal)
 
-Para a operação plena dos módulos multimídia, certifique-se de ter:
-* **Chromium** (Módulo Portal)
-* **qterminal** (Módulo de Edição Independente)
-* **nsxiv** (Módulo de Imagem)
-* **Bibliotecas:** `SDL2`, `SDL2_mixer` e `ncursesw`
-
-## 🚀 Forjando o Binário (Ritual do Olimpo)
+O ArchonPlayer possui um sistema de detecção automática para preparar sua forja, independente da sua distribuição Linux.
 
 ```bash
 # 1. Acesse a forja
+git clone https://github.com
 cd archonplayer-tui
 
-# 2. Compile (Nível Sênior)
+# 2. Recalibrar Dependências (O Pulo do Gato)
+# Suporta: Arch, Debian, Ubuntu, Mint e Fedora
+chmod +x install_deps.sh
+./install_deps.sh
+
+# 3. Compile (Nível Sênior)
 make
 
-# 3. Inicie a operação
+# 4. Inicie a operação
 ./bin/archonplayer
 ```
+
+---
+
+## 📦 Componentes do Arsenal
+Para a operação plena dos módulos multimídia, o script instalará:
+* **Chromium** (Módulo Portal)
+* **qterminal** (Módulo de Edição Independente)
+* **nsxiv** (Módulo de Imagem)
+* **Engines:** `SDL2`, `SDL2_mixer` e `ncursesw`
 
 *(Opcional) Instalação Global:* `sudo make install`
 
 ## ⚖️ Licença
 Este projeto está sob a licença **MIT**.
 
-*Desenvolvido por luiskallak-design*
+*Desenvolvido  por luiskallak-design*
+
 
