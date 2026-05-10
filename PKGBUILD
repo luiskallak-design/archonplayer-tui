@@ -2,28 +2,29 @@
 # Maintainer: luiskallak-design
 
 pkgname=archonplayer-git
-pkgver=1.0
+pkgver=2.0
 pkgrel=1
-pkgdesc="Player de áudio TUI forjado para o ecossistema Archon"
+pkgdesc="Player de áudio TUI moderno com espectro em tempo real e estética cyberpunk"
 arch=('x86_64')
-url="https://github.com"
+url="https://github.com/luiskallak-design/archonplayer-tui"
 license=('MIT')
 
-# Dependências do Arsenal
+# Arsenal de Dependências (Necessárias para o Arsenal SDL2 e Ncurses)
 depends=('sdl2' 'sdl2_mixer' 'ncurses')
 makedepends=('git' 'gcc' 'make')
 provides=('archonplayer')
 conflicts=('archonplayer')
 
-# Fonte Corrigida: Aponta para o repositório real
+# Fonte Corrigida (Agora apontando para o seu repositório oficial)
 source=("git+${url}.git")
 sha256sums=('SKIP')
 
 build() {
-  # O git clona para uma pasta com o nome do repositório
+  # O Makepkg clona para uma pasta com o nome do repositório
   cd "archonplayer-tui"
   
-  echo -e "\033[0;36m⌬ INICIANDO FORJA DO BINÁRIO...\033[0m"
+  echo -e "\033[0;36m⌬ INICIANDO FORJA DO BINÁRIO NO OLIMPO...\033[0m"
+  # Chama o seu Makefile otimizado
   make
 }
 
@@ -32,6 +33,8 @@ package() {
   
   echo -e "\033[0;32m⌬ DISTRIBUINDO PODER AO SISTEMA...\033[0m"
   
-  # Instalação padrão Arch Linux (sem sudo dentro do script)
+  # Instalação padrão seguindo as normas do Arch Linux
+  # Copia o binário forjado para o diretório de execução do sistema
   install -Dm755 bin/archonplayer "$pkgdir/usr/bin/archonplayer"
 }
+
