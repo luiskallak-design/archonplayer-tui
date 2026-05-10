@@ -20,21 +20,17 @@ source=("git+${url}.git")
 sha256sums=('SKIP')
 
 build() {
-  # O Makepkg clona para uma pasta com o nome do repositório
-  cd "archonplayer-tui"
+  # O segredo é entrar na subpasta 'archonplayer' após entrar no repo
+  cd "$srcdir/archonplayer-tui/archonplayer"
   
   echo -e "\033[0;36m⌬ INICIANDO FORJA DO BINÁRIO NO OLIMPO...\033[0m"
-  # Chama o seu Makefile otimizado
   make
 }
 
 package() {
-  cd "archonplayer-tui"
+  # Entra na mesma subpasta para achar o binário que o Makefile gerou
+  cd "$srcdir/archonplayer-tui/archonplayer"
   
   echo -e "\033[0;32m⌬ DISTRIBUINDO PODER AO SISTEMA...\033[0m"
-  
-  # Instalação padrão seguindo as normas do Arch Linux
-  # Copia o binário forjado para o diretório de execução do sistema
   install -Dm755 bin/archonplayer "$pkgdir/usr/bin/archonplayer"
 }
-
