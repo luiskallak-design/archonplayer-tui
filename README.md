@@ -34,7 +34,7 @@ O ArchonPlayer possui um sistema de detecção automática para preparar sua for
 
 ```bash
 # 1. Acesse a forja
-git clone https://github.com
+git clone https://github.com/luiskallak-design/archonplayer-tui
 cd archonplayer-tui
 
 # 2. Recalibrar Dependências (O Pulo do Gato)
