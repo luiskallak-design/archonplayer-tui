@@ -24,7 +24,7 @@ elif [ -f /etc/fedora-release ]; then
     sudo dnf install -y SDL2-devel SDL2_mixer-devel ncurses-devel qterminal nsxiv chromium
 
 else
-    echo -e "${RED}⌬ ERRO: DISTRO NÃO RECONHECIDA. POR FAVOR, INSTALE AS DEPENDÊNCIAS MANUALMENTE.${RESET}"
+    echo -e "${RED}⌬ ERRO: DISTRO NÃO RECONHEcida. POR FAVOR, INSTALE AS DEPENDÊNCIAS MANUALMENTE.${RESET}"
     exit 1
 fi
 
