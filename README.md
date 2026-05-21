@@ -35,17 +35,14 @@ O ArchonPlayer possui um sistema de detecção automática para preparar sua for
 ```bash
 # 1. Acesse a forja
 git clone https://github.com/luiskallak-design/archonplayer-tui
-cd archonplayer-tui
+cd archonplayer-tui/archonplayer
 
-# 2. Recalibrar Dependências (O Pulo do Gato)
-# Suporta: Arch, Debian, Ubuntu, Mint e Fedora
-chmod +x install_deps.sh
-./install_deps.sh
+# 2. Recalibrar Dependências
+chmod +x ../install_deps.sh
+../install_deps.sh
 
-# 3. Compile (Nível Sênior)
+# 3. Compile e rode
 make
-
-# 4. Inicie a operação
 ./bin/archonplayer
 ```
 
